@@ -1,11 +1,10 @@
 package iteration
 
-const repeatCount int = 5
-
-func Repeat(c string) string {
+// can use std lib- strings.Repeat
+func Repeat(c string, repeat int) string {
 
 	var repeated string
-	for i := 0; i < repeatCount; i++ {
+	for i := 0; i < repeat; i++ {
 		repeated += c
 
 	}
